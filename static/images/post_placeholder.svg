@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#e9ecef"/>
+  <g fill="#adb5bd">
+    <rect x="360" y="170" width="80" height="60" rx="6" fill="#ced4da"/>
+    <circle cx="380" cy="190" r="10" fill="#6c757d"/>
+    <path d="M365 220 L385 200 L405 215 L415 205 L435 220 Z" fill="#6c757d"/>
+    <text x="400" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#6c757d" text-anchor="middle">Sin imagen destacada</text>
+  </g>
+</svg>

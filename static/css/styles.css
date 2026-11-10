@@ -1,0 +1,68 @@
+/* Estilos personalizados para el Blog Coderhouse */
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e293b;
+  --bg-light: #f8fafc;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-light);
+  color: #334155;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-post {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.avatar-nav {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.avatar-profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e2e8f0;
+}
+
+.badge-tag {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  font-weight: 500;
+}
+
+footer {
+  margin-top: auto;
+}
