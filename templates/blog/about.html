@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Acerca de mí - CoderBlog{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-10">
+
+    <div class="card shadow-sm border-0 mb-4 overflow-hidden">
+      <div class="p-4 p-md-5 bg-dark text-white text-center" style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%);">
+        <img src="{% static 'images/default_avatar.svg' %}" alt="Mateo Calvo" class="avatar-profile bg-white p-2 mb-3 shadow" style="width: 130px; height: 130px;">
+        <h2 class="fw-bold mb-1">Mateo Calvo</h2>
+        <p class="text-primary-emphasis mb-0 fs-5">Estudiante de Coderhouse • Curso de Python</p>
+      </div>
+
+      <div class="card-body p-4 p-md-5">
+        <div class="row g-4">
+          <div class="col-md-7">
+            <h4 class="fw-bold text-dark mb-3">
+              <i class="bi bi-info-circle text-primary me-2"></i>Sobre este proyecto
+            </h4>
+            <p class="text-secondary lh-lg">
+              ¡Hola! Mi nombre es <strong>Mateo Calvo</strong> y este blog representa el <strong>Trabajo Práctico Final del curso de Python en Coderhouse</strong>.
+            </p>
+            <p class="text-secondary lh-lg">
+              El objetivo de esta entrega es consolidar e integrar todas las herramientas y metodologías vistas a lo largo de la cursada: desde la estructuración de modelos en una base de datos relacional con Django ORM, hasta el control de accesos mediante vistas basadas en clases protegidas, carga y tratamiento de archivos estáticos y media, y un diseño responsive moderno con Bootstrap 5.
+            </p>
+            <h5 class="fw-bold text-dark mt-4 mb-2">Principales funcionalidades desarrolladas:</h5>
+            <ul class="text-secondary lh-lg">
+              <li><strong>CRUD completo de publicaciones:</strong> Crear, listar, leer en detalle, editar y eliminar artículos con soporte para imágenes.</li>
+              <li><strong>Carga y visualización de imágenes segura:</strong> Si un artículo carece de imagen, la interfaz no se rompe y utiliza imágenes alternativas inteligentes.</li>
+              <li><strong>Motor de búsqueda integrado:</strong> Permite filtrar publicaciones por título, subtítulo o cuerpo de texto, mostrando avisos informativos.</li>
+              <li><strong>Gestión de usuarios y perfiles:</strong> Registro, login, logout, avatar personalizado, biografía y enlace web.</li>
+              <li><strong>Rutas protegidas por permisos:</strong> Solo usuarios autenticados pueden crear artículos o editar sus perfiles; y solo los autores o superusuarios pueden modificar/eliminar sus propios posts.</li>
+            </ul>
+          </div>
+
+          <div class="col-md-5">
+            <div class="bg-light p-4 rounded-3 border mb-4">
+              <h5 class="fw-bold text-dark mb-3">
+                <i class="bi bi-stack text-primary me-2"></i>Stack Tecnológico
+              </h5>
+              <ul class="list-group list-group-flush bg-transparent">
+                <li class="list-group-item bg-transparent px-0 d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-filetype-py text-warning me-2"></i>Python</span>
+                  <span class="badge bg-secondary">3.14.x / 3.x</span>
+                </li>
+                <li class="list-group-item bg-transparent px-0 d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-code-slash text-success me-2"></i>Django</span>
+                  <span class="badge bg-success">6.1.x</span>
+                </li>
+                <li class="list-group-item bg-transparent px-0 d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-bootstrap text-primary me-2"></i>Bootstrap</span>
+                  <span class="badge bg-primary">5.3.3</span>
+                </li>
+                <li class="list-group-item bg-transparent px-0 d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-image text-info me-2"></i>Pillow</span>
+                  <span class="badge bg-info text-dark">13.0.x</span>
+                </li>
+                <li class="list-group-item bg-transparent px-0 d-flex justify-content-between align-items-center">
+                  <span><i class="bi bi-database text-dark me-2"></i>Base de datos</span>
+                  <span class="badge bg-dark">SQLite</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card border-0 bg-primary text-white p-4 rounded-3 shadow-sm text-center">
+              <h6 class="fw-bold mb-2">Contacto y Repositorio</h6>
+              <p class="small text-white-50 mb-3">Proyecto publicado en GitHub para revisión y evaluación técnica.</p>
+              <div class="d-grid gap-2">
+                <a href="https://github.com/mateo-calvo" target="_blank" rel="noopener noreferrer" class="btn btn-light fw-bold text-primary btn-sm">
+                  <i class="bi bi-github me-1"></i> Perfil de GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
